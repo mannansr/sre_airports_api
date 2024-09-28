@@ -46,3 +46,6 @@
 - Utilizeing AWS CodeBuild to automate the build and deployment of Go application to Amazon EKS (Elastic Kubernetes Service). The build process is defined in the buildspec.yml file, which outlines the various stages involved in the CI/CD pipeline.
 
 - The buildspec.yml file is structured into several phases that collectively handle the installation of dependencies, building the application, and deploying it to EKS.
+
+## Monitring 
+- To add basic monitoring for tracking response times for each endpoint, we can integrate Prometheus into the Go application and use Grafana to visualize the metrics.
