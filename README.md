@@ -20,3 +20,8 @@
     ```bash
     terraform apply
     ```
+
+## Skkiping task 2 due to limited experience in Go
+
+## Containerize the Go application
+- This is a multi-stage Dockerfile. It compiles the Go code in the first stage and uses a minimal Alpine image in the second stage to keep the image lightweight.
