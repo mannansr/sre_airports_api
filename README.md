@@ -25,3 +25,7 @@
 
 ## Containerize the Go application
 - This is a multi-stage Dockerfile. It compiles the Go code in the first stage and uses a minimal Alpine image in the second stage to keep the image lightweight.
+
+## Prepared a deployment and service resource to deploy in Kubernetes
+- The deployment.yml file is used to define how the Go application will be deployed within a Kubernetes cluster.
+- The service.yml file defines a Service resource in Kubernetes, which provides a stable endpoint for accessing the deployed application.
