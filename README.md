@@ -29,3 +29,15 @@
 ## Prepared a deployment and service resource to deploy in Kubernetes
 - The deployment.yml file is used to define how the Go application will be deployed within a Kubernetes cluster.
 - The service.yml file defines a Service resource in Kubernetes, which provides a stable endpoint for accessing the deployed application.
+
+## Create API Gateway Routing Rules
+- We can configure AWS API Gateway to route traffic to both /airports and /airports_v2 endpoints, with 80% traffic going to /airports and 20% to /airports_v2.
+
+- In API Gateway, we can set up this routing using stage variables and Lambda functions for routing, or use weighted routing via a canary deployment feature.
+
+- Example of configuring API Gateway using canary deployments:
+
+   1. In API Gateway, select the API  want to update.
+   2. Create a new stage for  v2 API.
+   3. Enable canary deployment for the stage, and set the canary traffic weight to 0.2 (20%).
+   4. Deploy the API.
