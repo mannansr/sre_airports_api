@@ -1,6 +1,22 @@
-# Airport API
+## Creating an S3 Bucket using Terraform 
+- Creating an S3 bucket with Terraform is a simple yet powerful way to manage cloud infrastructure using Infrastructure as Code (IaC). Below is a brief guide on how to create an S3 bucket in AWS using Terraform.
 
-<!-- My thought process and decisions goes here -->
+1. Install Terraform
+    2. Configure AWS Provider
+    3. Define the S3 Bucket Resource
+    4. Running Terraform Commands
 
----
-_For tasks, checkout [tasks.md](tasks.md)_
+ - **Initialize Terraform**:
+    ```bash
+    terraform init
+    ```
+
+  - **Plan Changes**:
+    ```bash
+    terraform plan
+    ```
+
+  - **Apply Changes**:
+    ```bash
+    terraform apply
+    ```
