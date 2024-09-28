@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airport-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: airport-api
+  template:
+    metadata:
+      labels:
+        app: airport-api
+    spec:
+      containers:
+      - name: airport-api
+        image: docker-repo/airport-api:latest
+        ports:
+        - containerPort: 8080
